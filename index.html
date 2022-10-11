@@ -11,9 +11,10 @@
 		<link type="text/css" rel="stylesheet" href="css/default.css">
 	</head>
 <body>
-<audio autoplay="autopaly">
+    <audio id='bg-music' style="display:none; height: 0" src="music/bgm.mp3" loop  preload="auto" ></audio>
+<!-- <audio autoplay="autopaly">
 <source src="music/bgm.mp3" type="audio/mp3" />
-</audio>
+</audio> -->
 <div id="main">
 <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
             <div id="wrap">
@@ -59,6 +60,22 @@
     <script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
     <script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/love.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            setTimeout(() =>{
+                let audio = document.getElementById("bg-music");
+             audio.play();
+             document.addEventListener(
+                 "WeixinJSBridgeReady",
+                 function() {
+                     audio.play();
+                 },
+                 false
+             );
+            },1000)
+         
+            }
+    </script>
     <script>
         (function(){
             var canvas = $('#canvas');
