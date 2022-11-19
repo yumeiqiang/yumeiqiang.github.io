@@ -168,8 +168,8 @@
 
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("click here", 23, 16);
+            ctx.font = "16px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
+            ctx.fillText("点点点", 23, 16);
             ctx.restore();
         },
         clear: function() {

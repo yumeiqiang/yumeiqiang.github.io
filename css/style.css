@@ -1,0 +1,13 @@
+body {
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  margin: 0;
+  /* background-color: #000 !important; */
+}
+.ll{
+  position: absolute;
+  left:25%;
+  top:9%;
+  color: #fff;
+  font-weight: 500;
+}
