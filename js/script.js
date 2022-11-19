@@ -28,7 +28,7 @@ scene.add(group);
 let heart = null;
 let sampler = null;
 let originHeart = null;
-new THREE.OBJLoader().load('./heart_2.obj',obj => {
+new THREE.OBJLoader().load('/js/heart_2.obj',obj => {
   heart = obj.children[0];
   heart.geometry.rotateX(-Math.PI * 0.5);
   heart.geometry.scale(0.04, 0.04, 0.04);
